@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Arvores (.NET 8)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/conteúdos/arvores/bin/Debug/net8.0/arvores.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/conteúdos/arvores",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

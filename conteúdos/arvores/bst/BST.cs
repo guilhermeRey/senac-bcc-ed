@@ -1,6 +1,5 @@
-namespace senac.ed.bst;
 using System;
-
+namespace Senac.ED.BST;
 /**
     Classe BST
     ------------
@@ -14,33 +13,41 @@ using System;
     - Min()
     - PrintInOrder()
     - PrintNicely()
-
 */
-public class BST {
+public class BST
+{
     private No Raiz { get; set; }
-    
-    public BST() {
+
+    public BST()
+    {
         this.Raiz = null;
     }
-    
-    private No delete(No node, int chave) {
+
+    private No delete(No node, int chave)
+    {
         if (node == null)
             return null;
 
-        if (chave < node.Key) {
+        if (chave < node.Key)
+        {
             node.Esq = this.delete(node.Esq, chave);
         }
-        else if (chave > node.Key) {
+        else if (chave > node.Key)
+        {
             node.Dir = this.delete(node.Dir, chave);
         }
-        else {
-            if (node.Esq == null) {
+        else
+        {
+            if (node.Esq == null)
+            {
                 return node.Dir;
             }
-            else if (node.Dir == null) {
+            else if (node.Dir == null)
+            {
                 return node.Esq;
             }
-            else {
+            else
+            {
                 int valorSucessor = (int)this.min(node.Dir);
                 node.Key = valorSucessor;
                 node.Dir = this.delete(node.Dir, valorSucessor);
@@ -49,24 +56,30 @@ public class BST {
 
         return node;
     }
-    
-    private No InsertRecursivo(No raiz, int chave) {
-        if (raiz == null) {
+
+    private No InsertRecursivo(No raiz, int chave)
+    {
+        if (raiz == null)
+        {
             return new No(chave);
         }
-        
-        if (chave > raiz.Key) {
+
+        if (chave > raiz.Key)
+        {
             raiz.Dir = this.InsertRecursivo(raiz.Dir, chave);
         }
-        else {
+        else
+        {
             raiz.Esq = this.InsertRecursivo(raiz.Esq, chave);
         }
-        
+
         return raiz;
     }
 
-    private No SearchRecursivo(No raiz, int chave) {
-        if (raiz == null) {
+    private No SearchRecursivo(No raiz, int chave)
+    {
+        if (raiz == null)
+        {
             return null;
         }
 
@@ -78,57 +91,75 @@ public class BST {
             return this.SearchRecursivo(raiz.Esq, chave);
     }
 
-    private int? min(No node) {
+    private int? min(No node)
+    {
         No aux = node;
-        while (aux != null && aux.Esq != null) {
+        while (aux != null && aux.Esq != null)
+        {
             aux = aux.Esq;
         }
-        
+
         return aux == null ? null : aux.Key;
     }
 
-    private void printNicely(No node, string spacing) {
-        if (node != null) {
+    private void printNicely(No node, string spacing)
+    {
+        if (node != null)
+        {
             Console.WriteLine(spacing + node.Key);
             this.printNicely(node.Esq, spacing + "..");
             this.printNicely(node.Dir, spacing + "..");
         }
     }
 
-    public No Search(int valor) {
+    private void printInOrder(No node)
+    {
+        if (node != null)
+        {
+            this.printInOrder(node.Esq);
+            Console.Write(node.Key + " ");
+            this.printInOrder(node.Dir);
+        }
+    }
+
+    public No Search(int valor)
+    {
         return this.SearchRecursivo(this.Raiz, valor);
     }
-    
-    public void Insert(int valor) {
+
+    public void Insert(int valor)
+    {
         this.Raiz = this.InsertRecursivo(this.Raiz, valor);
     }
 
-    public void Delete(int valor) {
+    public void Delete(int valor)
+    {
         this.Raiz = this.delete(this.Raiz, valor);
     }
-    
-    public int? Max() {
+
+    public int? Max()
+    {
         No aux = this.Raiz;
-        while (aux != null && aux.Dir != null) {
+        while (aux != null && aux.Dir != null)
+        {
             aux = aux.Dir;
         }
-        
+
         return aux == null ? null : aux.Key;
     }
-    
-    public int? Min() {
+
+    public int? Min()
+    {
         return this.min(this.Raiz);
     }
-    
-    public void PrintInOrder(No node) {
-        if (node != null) {
-            this.PrintInOrder(node.Esq);
-            Console.Write(node.Key + " ");
-            this.PrintInOrder(node.Dir);
-        }
+
+    public void PrintInOrder()
+    {
+        this.printInOrder(this.Raiz);
     }
-    
-    public void PrintNicely() {
+
+    public void PrintNicely()
+    {
         this.printNicely(this.Raiz, ".");
     }
 }

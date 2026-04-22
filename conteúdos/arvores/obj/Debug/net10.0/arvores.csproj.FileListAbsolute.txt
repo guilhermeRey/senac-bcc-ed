@@ -1,0 +1,15 @@
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.AssemblyInfoInputs.cache
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.AssemblyInfo.cs
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.csproj.CoreCompileInputs.cache
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.sourcelink.json
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/bin/Debug/net10.0/arvores
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/bin/Debug/net10.0/arvores.deps.json
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/bin/Debug/net10.0/arvores.runtimeconfig.json
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/bin/Debug/net10.0/arvores.dll
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/bin/Debug/net10.0/arvores.pdb
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.dll
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/refint/arvores.dll
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.pdb
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/arvores.genruntimeconfig.cache
+/Users/yarquen/dev/senac/senac-bcc-ed/conteúdos/arvores/obj/Debug/net10.0/ref/arvores.dll
