@@ -76,7 +76,6 @@ public class AVL
 
     return novaRaiz;
   }
-
   private AVLNo InserirRecursivo(AVLNo raiz, int chave)
   {
     if (raiz == null) return new AVLNo(chave);
@@ -101,7 +100,7 @@ public class AVL
     }
     else if (raiz.FatorDeBalanceamento == -2)
     {
-      if (raiz.Dir?.FatorDeBalanceamento > 0)
+      if (raiz.Dir.FatorDeBalanceamento > 0)
         raiz.Dir = RotacionaDireita(raiz.Dir);
 
       raiz = RotacionaEsquerda(raiz);

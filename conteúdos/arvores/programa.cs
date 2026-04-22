@@ -36,11 +36,11 @@ public class HelloWorld
         // Console.WriteLine("\n");
         // avlTree.PrintNicely();
 
-        // 1) Quatro cenários clássicos de rotação AVL
-        TestarCaso("LL (30,20,10)", new[] { 30, 20, 10 });
-        TestarCaso("RR (10,20,30)", new[] { 10, 20, 30 });
-        TestarCaso("LR (30,10,20)", new[] { 30, 10, 20 });
-        TestarCaso("RL (10,30,20)", new[] { 10, 30, 20 });
+        // // 1) Quatro cenários clássicos de rotação AVL
+        // TestarCaso("LL (30,20,10)", new[] { 30, 20, 10 });
+        // TestarCaso("RR (10,20,30)", new[] { 10, 20, 30 });
+        // TestarCaso("LR (30,10,20)", new[] { 30, 10, 20 });
+        // TestarCaso("RL (10,30,20)", new[] { 10, 30, 20 });
         // 2) Comparação prática BST x AVL com sequência crescente
         Console.WriteLine("\n=== Comparacao BST x AVL (1..7) ===");
         BST bst = new BST();
