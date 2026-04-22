@@ -1,48 +1,71 @@
-# Prerequisites
-*.d
+# -----------------------------
+# OS / editor
+# -----------------------------
+.DS_Store
+**/.DS_Store
 
-# Object files
+.vscode/*
+!.vscode/launch.json
+
+# -----------------------------
+# .NET / C#
+# -----------------------------
+**/[Bb]in/
+**/[Oo]bj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Logs and temp files
+# -----------------------------
+*.log
+*.tmp
+*.temp
+
+# -----------------------------
+# C/C++ compiled artifacts
+# (useful for C challenges)
+# -----------------------------
+*.d
 *.o
 *.ko
 *.obj
 *.elf
-
-# Linker output
 *.ilk
 *.map
 *.exp
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Libraries
 *.lib
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
-
-# Executables
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
-
-# Debug files
 *.dSYM/
 *.su
 *.idb
-*.pdb
-
-# Kernel Module Compile Results
 *.mod*
 *.cmd
 .tmp_versions/
@@ -50,6 +73,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
-# debug information files
 *.dwo
